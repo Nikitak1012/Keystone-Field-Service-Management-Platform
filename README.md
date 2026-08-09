@@ -53,15 +53,14 @@
 
 
 ### 2. Job Details & Action Buttons
-![Job Details Screenshot](<img width="1914" height="862" alt="image" src="https://github.com/user-attachments/assets/4f04b3db-55a1-45b7-b01f-215b06ed026b" />
-)
+<img width="1914" height="862" alt="image" src="https://github.com/user-attachments/assets/4f04b3db-55a1-45b7-b01f-215b06ed026b" />
+
 
 ### 3. Time Logs Scheduling Page
-![Time Logs Screenshot](<img width="1901" height="932" alt="image" src="https://github.com/user-attachments/assets/f6264065-4a7b-429d-9430-ca095fb0d411" />
-)
+<img width="1901" height="932" alt="image" src="https://github.com/user-attachments/assets/f6264065-4a7b-429d-9430-ca095fb0d411" />
+
 ### 4. Profile Page with Image Upload
-![Profile Screenshot](<img width="1919" height="875" alt="image" src="https://github.com/user-attachments/assets/75435f8d-0af1-4804-aacc-fd47b31bf145" />
-)
+<img width="1919" height="875" alt="image" src="https://github.com/user-attachments/assets/75435f8d-0af1-4804-aacc-fd47b31bf145" />
 
 ---
 
