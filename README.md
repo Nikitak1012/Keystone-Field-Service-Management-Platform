@@ -1,75 +1,82 @@
-# React + TypeScript + Vite
+🚀 KeyStone -Field - Service-Management-Platform
+📖 Project Overview
+My project is a full-stack service management web application designed for field technicians. It allows technicians to view assigned jobs, update work order statuses, log working hours, manage their personal profile, and submit final project deliverables upon completion.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Key Features
+Technician Dashboard: Visualizes job statistics (Assigned, In Progress, Completed, On Hold) with interactive summary cards.
 
-Currently, two official plugins are available:
+Job Management: View assigned work orders, track status, and view detailed job information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Status Workflow:
 
-## React Compiler
+Start Job: Moves a job from "Assigned" to "In Progress" with a user-friendly confirmation modal.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Log Time: Once "In Progress", a dedicated button allows the technician to schedule and log work hours.
 
-## Expanding the ESLint configuration
+Complete Job: Marks the job as "Completed".
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Profile Management: Technicians can update their display name and upload a profile picture, which persists across sessions.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Project Submission: Upon job completion, technicians can submit a full project package including Source Code links, Live Deployment URLs, Demo videos, Feedback videos, and Report files.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+🖼️ Application Screenshots
+(Instructions to add screenshots are provided below)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Technician Dashboard
+https://link-to-your-dashboard-screenshot
 
-```
+2. Job Details & Action Buttons
+https://link-to-your-job-details-screenshot
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Time Logs Scheduling
+https://link-to-your-time-logs-screenshot
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4. Profile Page with Image Upload
+https://link-to-your-profile-screenshot
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+5. Project Submission Modal
+https://link-to-your-submission-modal-screenshot
 
-```
+🛠️ Technology Stack
+Frontend
+React.js (with TypeScript)
+
+React Router DOM (Navigation)
+
+Tailwind CSS (Styling)
+
+Heroicons (Icons)
+
+Axios / Fetch API (HTTP Requests)
+
+date-fns (Date formatting)
+
+Backend
+Spring Boot (Java)
+
+Spring Data JPA & Hibernate (Database ORM)
+
+MySQL (Relational Database)
+
+📂 Project Structure
+
+Frontend Structure:
+/src
+ ├── /Components
+ │    ├── /Common            # Reusable UI elements (Badges, Modals)
+ │    ├── /Technician        # Page-specific components (Dashboard, JobDetails)
+ │    └── /Auth              # Login & Registration components
+ ├── /Context                # AuthContext (User state management)
+ ├── /Pages                  # Full page views (TimeLogs, Profile)
+ ├── /Services               # API service calls (JobService)
+ ├── /Types                  # TypeScript type definitions
+ └── App.tsx                 # Main routing configuration
+
+Backend Structure:
+ /src/main/java/com/keystone/deliverableservice
+ ├── /Controller             # REST API Endpoints (WorkOrderController)
+ ├── /Service                # Business Logic (WorkOrderService)
+ ├── /Repository             # Database interactions (WorkOrderRepository)
+ ├── /Entity                 # Database Tables (WorkOrder)
+ └── /DTO                    # Data Transfer Objects
+
