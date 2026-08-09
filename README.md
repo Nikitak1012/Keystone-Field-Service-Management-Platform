@@ -99,10 +99,11 @@ Open your MySQL client (like MySQL Workbench or the command line) and run:
 CREATE DATABASE key_stone_delivery_service;
 
 ### 🌐 Step 2: Configure the Backend
-Open the deliverableservice folder in your IDE.
+Open the `deliverableservice` folder in your IDE.
 
-Update src/main/resources/application.properties with your MySQL credentials:
-```sql
+Update `src/main/resources/application.properties` with your MySQL credentials:
+
+```properties
 spring.datasource.username=root
 spring.datasource.password=YOUR_MYSQL_PASSWORD
 
