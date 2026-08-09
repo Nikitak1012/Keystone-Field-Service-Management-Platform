@@ -1,82 +1,99 @@
-🚀 KeyStone -Field - Service-Management-Platform
-📖 Project Overview
-My project is a full-stack service management web application designed for field technicians. It allows technicians to view assigned jobs, update work order statuses, log working hours, manage their personal profile, and submit final project deliverables upon completion.
+# 🚀 Keystone - Field Service Management Platform
 
-✨ Key Features
-Technician Dashboard: Visualizes job statistics (Assigned, In Progress, Completed, On Hold) with interactive summary cards.
+---
 
-Job Management: View assigned work orders, track status, and view detailed job information.
+## 📖 Project Overview
 
-Status Workflow:
+**Keystone** is a full-stack service management web application designed specifically for field technicians. This platform streamlines the technician's workflow, allowing them to:
 
-Start Job: Moves a job from "Assigned" to "In Progress" with a user-friendly confirmation modal.
+- 📋 View assigned work orders in a centralized dashboard.
+- ⚡ Update job statuses (Assigned ➡️ In Progress ➡️ Completed).
+- ⏱️ Schedule and log working hours.
+- 👤 Manage personal profiles, including custom display names and profile pictures.
+- 📤 Submit final project deliverables (Source code, live URLs, videos, and reports) upon job completion.
 
-Log Time: Once "In Progress", a dedicated button allows the technician to schedule and log work hours.
+---
 
-Complete Job: Marks the job as "Completed".
+## ✨ Key Features
 
-Profile Management: Technicians can update their display name and upload a profile picture, which persists across sessions.
+### 📊 Technician Dashboard
+- Visualizes job statistics using interactive summary cards.
+- Tracks metrics for **Assigned**, **In Progress**, **Completed**, and **On Hold** jobs.
 
-Project Submission: Upon job completion, technicians can submit a full project package including Source Code links, Live Deployment URLs, Demo videos, Feedback videos, and Report files.
+### 📋 Job Management
+- View detailed information about assigned work orders.
+- Real-time status updates with intuitive UI feedback.
 
-🖼️ Application Screenshots
-(Instructions to add screenshots are provided below)
+### 🔄 Status Workflow
+- **Start Job:** Moves a job from "Assigned" to "In Progress" with a secure confirmation modal.
+- **Log Time:** Once "In Progress," technicians can navigate to a dedicated scheduling page to log work hours.
+- **Complete Job:** Marks the task as "Completed" to finalize the assignment.
 
-1. Technician Dashboard
-https://link-to-your-dashboard-screenshot
+### 👤 Profile Management
+- Update your display name to reflect your real name.
+- **Upload a profile picture** directly from your device, which persists across sessions.
 
-2. Job Details & Action Buttons
-https://link-to-your-job-details-screenshot
+### 📤 Project Submission Module
+- Upon job completion, technicians can submit a comprehensive project package:
+  1. 🔗 Source Code (GitHub/Drive link or file upload)
+  2. 🌐 Live Deployment URL
+  3. 🎥 Demo Video Link (YouTube/Drive)
+  4. 🎬 Feedback Video Link
+  5. 📄 Project Report (PDF/Doc upload)
+- Fully integrated with a **Spring Boot backend** for persistent database storage.
 
-3. Time Logs Scheduling
-https://link-to-your-time-logs-screenshot
+---
 
-4. Profile Page with Image Upload
-https://link-to-your-profile-screenshot
+## 🖼️ Application Screenshots
 
-5. Project Submission Modal
-https://link-to-your-submission-modal-screenshot
+*(Please replace the `src` links below with your actual image URLs. See the "How to add screenshots" section below).*
 
-🛠️ Technology Stack
-Frontend
-React.js (with TypeScript)
+### 1. Technician Dashboard
+![Dashboard Screenshot](https://link-to-your-dashboard-screenshot)
 
-React Router DOM (Navigation)
+### 2. Job Details & Action Buttons
+![Job Details Screenshot](https://link-to-your-job-details-screenshot)
 
-Tailwind CSS (Styling)
+### 3. Time Logs Scheduling Page
+![Time Logs Screenshot](https://link-to-your-time-logs-screenshot)
 
-Heroicons (Icons)
+### 4. Profile Page with Image Upload
+![Profile Screenshot](https://link-to-your-profile-screenshot)
 
-Axios / Fetch API (HTTP Requests)
+### 5. Project Submission Modal
+![Submission Modal Screenshot](https://link-to-your-submission-modal-screenshot)
 
-date-fns (Date formatting)
+---
 
-Backend
-Spring Boot (Java)
+## 🛠️ Technology Stack
 
-Spring Data JPA & Hibernate (Database ORM)
+### 🎨 Frontend
+| Technology | Purpose |
+| :--- | :--- |
+| **React.js (TypeScript)** | Core UI Library |
+| **React Router DOM** | Page Navigation |
+| **Tailwind CSS** | Styling & Layout |
+| **Heroicons** | Icons |
+| **Axios / Fetch API** | HTTP Requests to Backend |
+| **date-fns** | Date Formatting |
 
-MySQL (Relational Database)
+### ⚙️ Backend & Database
+| Technology | Purpose |
+| :--- | :--- |
+| **Spring Boot (Java)** | Backend REST API Framework |
+| **Spring Data JPA & Hibernate** | Database ORM |
+| **MySQL** | Relational Database |
 
-📂 Project Structure
+---
 
-Frontend Structure:
-/src
- ├── /Components
- │    ├── /Common            # Reusable UI elements (Badges, Modals)
- │    ├── /Technician        # Page-specific components (Dashboard, JobDetails)
- │    └── /Auth              # Login & Registration components
- ├── /Context                # AuthContext (User state management)
- ├── /Pages                  # Full page views (TimeLogs, Profile)
- ├── /Services               # API service calls (JobService)
- ├── /Types                  # TypeScript type definitions
- └── App.tsx                 # Main routing configuration
+## 🚀 How to Run the Project Locally
 
-Backend Structure:
- /src/main/java/com/keystone/deliverableservice
- ├── /Controller             # REST API Endpoints (WorkOrderController)
- ├── /Service                # Business Logic (WorkOrderService)
- ├── /Repository             # Database interactions (WorkOrderRepository)
- ├── /Entity                 # Database Tables (WorkOrder)
- └── /DTO                    # Data Transfer Objects
+### 📋 Prerequisites
+- [Node.js](https://nodejs.org/) installed.
+- [Java JDK 17+](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) installed.
+- [MySQL Server](https://dev.mysql.com/downloads/installer/) installed and running.
 
+### 🗄️ Step 1: Setup the MySQL Database
+Open your MySQL client (like MySQL Workbench or the command line) and run:
+```sql
+CREATE DATABASE key_stone_delivery_service;
