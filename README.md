@@ -49,19 +49,19 @@
 *(Please replace the `src` links below with your actual image URLs. See the "How to add screenshots" section below).*
 
 ### 1. Technician Dashboard
-![Dashboard Screenshot](https://link-to-your-dashboard-screenshot)
+![Dashboard Screenshot](<img width="1915" height="936" alt="image" src="https://github.com/user-attachments/assets/20ff27fa-d718-452e-9eb9-6278cf8a0245" />
+)
 
 ### 2. Job Details & Action Buttons
-![Job Details Screenshot](https://link-to-your-job-details-screenshot)
+![Job Details Screenshot](<img width="1914" height="862" alt="image" src="https://github.com/user-attachments/assets/4f04b3db-55a1-45b7-b01f-215b06ed026b" />
+)
 
 ### 3. Time Logs Scheduling Page
-![Time Logs Screenshot](https://link-to-your-time-logs-screenshot)
-
+![Time Logs Screenshot](<img width="1901" height="932" alt="image" src="https://github.com/user-attachments/assets/f6264065-4a7b-429d-9430-ca095fb0d411" />
+)
 ### 4. Profile Page with Image Upload
-![Profile Screenshot](https://link-to-your-profile-screenshot)
-
-### 5. Project Submission Modal
-![Submission Modal Screenshot](https://link-to-your-submission-modal-screenshot)
+![Profile Screenshot](<img width="1919" height="875" alt="image" src="https://github.com/user-attachments/assets/75435f8d-0af1-4804-aacc-fd47b31bf145" />
+)
 
 ---
 
@@ -93,28 +93,6 @@
 - [Java JDK 17+](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) installed.
 - [MySQL Server](https://dev.mysql.com/downloads/installer/) installed and running.
 
-### 🗄️ Step 1: Setup the MySQL Database
-Open your MySQL client (like MySQL Workbench or the command line) and run:
-```sql
-CREATE DATABASE key_stone_delivery_service;
 
-### 🌐 Step 2: Configure the Backend
-Open the `deliverableservice` folder in your IDE.
-
-Update `src/main/resources/application.properties` with your MySQL credentials:
-
-```properties
-spring.datasource.username=root
-spring.datasource.password=YOUR_MYSQL_PASSWORD
-
-###⚡ Step 3: Run the Spring Boot Backend
-cd deliverableservice
-./mvnw spring-boot:run
-
-The backend will run on http://localhost:7373
-### ⚛️ Step 4: Run the React Frontend
-cd frontend
-npm install
-npm run dev
 
 
