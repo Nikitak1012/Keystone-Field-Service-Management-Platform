@@ -46,11 +46,11 @@
 
 ## 🖼️ Application Screenshots
 
-*(Please replace the `src` links below with your actual image URLs. See the "How to add screenshots" section below).*
+
 
 ### 1. Technician Dashboard
-![Dashboard Screenshot](<img width="1915" height="936" alt="image" src="https://github.com/user-attachments/assets/20ff27fa-d718-452e-9eb9-6278cf8a0245" />
-)
+<img width="1915" height="936" alt="image" src="https://github.com/user-attachments/assets/20ff27fa-d718-452e-9eb9-6278cf8a0245" />
+
 
 ### 2. Job Details & Action Buttons
 ![Job Details Screenshot](<img width="1914" height="862" alt="image" src="https://github.com/user-attachments/assets/4f04b3db-55a1-45b7-b01f-215b06ed026b" />
