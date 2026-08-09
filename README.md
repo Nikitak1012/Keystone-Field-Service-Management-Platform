@@ -97,3 +97,21 @@
 Open your MySQL client (like MySQL Workbench or the command line) and run:
 ```sql
 CREATE DATABASE key_stone_delivery_service;
+### 🌐 Step 2: Configure the Backend
+Open the deliverableservice folder in your IDE.
+
+Update src/main/resources/application.properties with your MySQL credentials:
+spring.datasource.username=root
+spring.datasource.password=YOUR_MYSQL_PASSWORD
+
+###⚡ Step 3: Run the Spring Boot Backend
+cd deliverableservice
+./mvnw spring-boot:run
+
+The backend will run on http://localhost:7373
+### ⚛️ Step 4: Run the React Frontend
+cd frontend
+npm install
+npm run dev
+
+
