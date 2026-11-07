@@ -13,16 +13,14 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-
-
-public abstract class CustomerServiceLogicImpl implements CustomerServiceLogic{
+public class CustomerServiceLogicImpl implements CustomerServiceLogic{
 	
 	@Autowired
 	private CustomerRepository cusRepo;
 	
 	@Override
 	public Customer createCustomer(Customer customer) {
-		if(cusRepo.existsEmail(customer.getEmail())) {
+		if(cusRepo.existsByEmail(customer.getEmail())) {
 			throw new RuntimeException("Customer already exists");
 		}
 		customer.setActive(true);
