@@ -35,3 +35,4 @@ EXPOSE 7373
 
 # Run the Spring Boot application using Render's dynamic $PORT (fallback to 7373)
 ENTRYPOINT ["sh", "-c", "java -Dserver.port=${PORT:-7373} -jar app.jar"]
+
