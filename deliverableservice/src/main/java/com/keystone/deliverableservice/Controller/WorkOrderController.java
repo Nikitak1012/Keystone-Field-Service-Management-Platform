@@ -10,7 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-@CrossOrigin(origins = "http://localhost:5173") // THIS IS CRITICAL to connect to your React App
+@CrossOrigin(originPatterns = {"http://localhost:*", "https://*.onrender.com"}, allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/work-orders")
 public class WorkOrderController {
