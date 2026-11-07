@@ -1,7 +1,6 @@
-import React, { useState, useRef } from 'react';
-import { XMarkIcon, DocumentArrowUpIcon } from '@heroicons/react/24/outline';
+import React, { useState } from 'react';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 import toast from 'react-hot-toast';
-import axios from 'axios'; // Assuming you use axios
 
 interface ProjectSubmissionModalProps {
   isOpen: boolean;

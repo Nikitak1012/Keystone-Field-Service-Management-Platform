@@ -7,15 +7,30 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node / Vite
 node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.*
+!.env.example
+
+# Java / Maven build outputs
+target/
+**/target/
+*.class
+
+# Eclipse / STS / IntelliJ
+.project
+.classpath
+.settings/
+.idea/
+*.iml
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
 .DS_Store
 *.suo
 *.ntvs*

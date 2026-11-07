@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080/api';
+// In development, defaults to local Spring Boot backend (port 7373).
+// On Render, reads VITE_API_BASE_URL environment variable (e.g. https://your-backend.onrender.com/api).
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:7373/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -37,5 +39,4 @@ api.interceptors.response.use(
   }
 );
 
-// This is used by authService.ts and jobService.ts
 export default api;
